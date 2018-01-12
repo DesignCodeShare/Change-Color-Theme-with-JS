@@ -19,11 +19,10 @@
 <script src="https://use.fontawesome.com/621e755607.js"></script>
 
 </head>
-
 <body id="background">
 <nav class="fixed">
 <a href="#about">
-  <h1 class="logo-name caps float-right">logo</h1>
+  <h1 class="logo-name caps float-right" id="headerChngColor">logo</h1>
 </a>
     <ul class="caps arial">
     <li><a href="#">Share</a></li>
@@ -35,7 +34,7 @@
 
 <main>
 
-  <h2 class="arial">Change the <span id="highlight">Color</span> Theme.</h2>
+  <h2 class="arial">Change the <span id="headerChngColor" class="bold">Color</span> Theme.</h2>
 <p class="arial">
 In order to change the colors on this page, enter your chosen color HEX #number or the name of your</br> 
 chosen color below in the input field and press the button next to it. Have fun experimenting!<br />
@@ -46,21 +45,23 @@ Don’t be shy!
 <section id="get">
 <center>
  <div>
+<input class="inzie arial" type="text" id="hexAColor" name="Highlight" placeholder="Logo Color">
+<button id="changeColorBtn"><i class="fa fa-3x fa-check submit" id="background" aria-hidden="true"></i></button>
+  </div>
+
+ <div>
 <input class="inzie arial" type="text" id="highlight" name="Highlight" placeholder="Highlight Color">
 <button><i class="fa fa-3x fa-check submit" id="background" aria-hidden="true"></i></button>
   </div>
 
  <div>
-<input class="inzie arial" type="text" id="highlight" name="Highlight" placeholder="Text Color">
-<button><i class="fa fa-3x fa-check submit" id="background" aria-hidden="true"></i></button>
-  </div>
-
- <div>
-<input class="inzie arial" type="text" id="highlight" name="Highlight" placeholder="Background Color">
+<input class="inzie arial" type="text" id="highlight" name="Highlight" placeholder="Highlight Color">
 <button id="highlight"><i class="fa fa-3x fa-check submit" id="background" aria-hidden="true"></i></button>
   </div>
   </center>
 </section>
 
+<script type="text/javascript" src="script.js"></script>
+</body>
 
 </html>
